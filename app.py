@@ -16,30 +16,39 @@ st.set_page_config(
 
 st.markdown("""
 <style>
-.main {background-color:#f5f7fa;}
-.big-title{
-text-align:center;
-font-size:42px;
-font-weight:700;
-color:#e63946;
+.main {
+    background-color: #f8fafc;
 }
-.subtitle{
-text-align:center;
-color:#666;
-margin-bottom:25px;
+
+[data-testid="stSidebar"] {
+    background: #0f172a;
 }
+
+[data-testid="stSidebar"] * {
+    color: white;
+}
+
+.hero {
+    padding: 30px;
+    border-radius: 20px;
+    background: linear-gradient(90deg,#ef4444,#f97316);
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer {
+    text-align:center;
+    color:gray;
+    padding:15px;
+}
+
 .stButton > button{
-width:100%;
-height:55px;
-border-radius:12px;
-font-size:18px;
-font-weight:bold;
-}
-.card{
-background:white;
-padding:15px;
-border-radius:12px;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    width:100%;
+    border-radius:12px;
+    height:55px;
+    font-size:18px;
+    font-weight:bold;
 }
 </style>
 """, unsafe_allow_html=True)
