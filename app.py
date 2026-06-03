@@ -44,7 +44,10 @@ box-shadow:0 2px 10px rgba(0,0,0,0.1);
 
 @st.cache_resource
 def load_model():
-    dataset = pd.read_csv("dataset/heart_statlog_cleveland_hungary_final.csv")
+   
+    dataset = pd.read_csv(
+    "Heart-Disease-Diagnosis-using-Machine-Learning-and-Data-Mining-main/dataset/heart_statlog_cleveland_hungary_final.csv"
+)
 
     mode_st_slope = dataset['ST slope'].mode()[0]
     dataset['ST slope'] = dataset['ST slope'].replace(0, mode_st_slope)
