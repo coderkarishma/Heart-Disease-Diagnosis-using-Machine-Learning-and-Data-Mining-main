@@ -84,7 +84,11 @@ st.markdown("""
 [data-testid="stSidebar"] input::placeholder {
     color: #555 !important;
 }
-
+[data-testid="stSidebar"] h1,
+[data-testid="stSidebar"] h2,
+[data-testid="stSidebar"] h3 {
+    color: white !important;
+}
 </style>
 """, unsafe_allow_html=True)
 
