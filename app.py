@@ -28,9 +28,6 @@ st.markdown("""
     background: #0f172a;
 }
 
-[data-testid="stSidebar"] * {
-    color: white;
-}
 
 .hero {
     padding: 35px;
@@ -53,6 +50,39 @@ st.markdown("""
     height:55px;
     font-size:18px;
     font-weight:bold;
+}
+
+</style>
+""", unsafe_allow_html=True)
+
+st.markdown("""
+<style>
+
+[data-testid="stSidebar"] {
+    background: #0f172a;
+}
+
+/* Labels */
+[data-testid="stSidebar"] label {
+    color: white !important;
+    font-weight: 600;
+}
+
+/* Number Input Text */
+[data-testid="stSidebar"] input {
+    color: black !important;
+    background-color: white !important;
+}
+
+/* Selectbox Text */
+[data-testid="stSidebar"] div[data-baseweb="select"] > div {
+    color: black !important;
+    background-color: white !important;
+}
+
+/* Placeholder text */
+[data-testid="stSidebar"] input::placeholder {
+    color: #555 !important;
 }
 
 </style>
